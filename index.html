@@ -7,12 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"> <img src="images/skykeys_logo.jpg"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">SERVICES</a></li>
@@ -21,6 +24,7 @@
                     <li><a href="">CONTACTS</a></li>
                 </ul>
             </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -30,5 +34,17 @@
         </div>
        
     </section>
+
+    <!----- Javascript for Toggle Menu ----->
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+    </script>
 </body>
 </html>
