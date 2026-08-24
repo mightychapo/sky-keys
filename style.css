@@ -9,8 +9,10 @@
     width: 100%;
     background-image: linear-gradient(rgba(4,9, 30, 0.7), rgba(4,9, 30, 0.7)),url(images/bg_banner.jpg); 
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -86,6 +88,7 @@ nav .fa{
 }
 
 @media (max-width: 700px) {
+       
 .text-box h1{
     font-size: 20px;
 } 
@@ -121,7 +124,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 100px;
+    padding: 100px 0 ;
 }
 h1{
     font-size: 36px;
@@ -165,4 +168,5 @@ h3{
         display: flex;
         flex-direction: column;
     }
+     
 }
