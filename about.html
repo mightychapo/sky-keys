@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky keys Agency.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/skykeys_logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">SCHOLARSHIPS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACTS</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+       
+    </section>
+
+    <!-- About us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are A Trustworthy Consultancy Agency</h1>
+                <p>
+                  Sky Keys is an Education, Sports, Careers and International Travel Consultancy helping students, athletes, graduates, professionals and travelers discover and pursue opportunities beyond borders. Our services include scholarship guidance, study abroad, football trials, sports opportunities, jobs abroad, tourist visa assistance and international travel guidance.  
+                </p>
+                <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/professionals.avif" >
+            </div>
+        </div>
+    </section>
+     <!------ Footer ------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>A professional consultancy that connects people with legitimate global opportunities while providing <br>transparent guidance throuhout the application journey.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>  
+        </div>
+    </section>
+
+    <!----- Javascript for Toggle Menu ----->
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+    </script>
+</body>
+</html>
