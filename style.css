@@ -358,3 +358,29 @@ background: rgba(83, 176, 244, 0.7);
 .blue-btn:hover{
     color: #fff;
 }
+.vision{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 10%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.78), rgba(4, 9, 30, 0.78)), url(images/banner.avif);
+    background-position: center;
+    background-size: cover;
+}
+.vision-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    color: #fff;
+}
+.mission-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    color: #fff;
+}
+.vision-col h1,
+.mission-col h1{
+    color: #fff;
+}
+.vision-col p,
+.mission-col p{
+    color: rgba(255, 255, 255, 0.88);
+}
